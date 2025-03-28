@@ -106,7 +106,10 @@ UPDATE Company
 SET companyname = 'Urban Outfitters'
 WHERE companyname = 'Urban Outfitters, Inc.';
 
+#6) In ContactEmployee table, the statement that removes Dianne Connor’s contactevent with Jack Lee (one statement).
+ Delete from contact where firstname="Dianne " and lastname="Connor";
 
+#7) Write the SQL SELECT query that displays the names of the employees thathave contacted Toll Brothers (one statement). Run the SQL SELECT query in MySQL Workbench. Copy the results below as well.
 select firstname ,lastname from company inner join  contact on company.companyid=contact.cmpid where companyname = 'toll brothers'; 
 
 
